@@ -1,54 +1,200 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A Pen by  Tamás Kökény</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gyulavári Ádám</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Noto+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
+  <script src="https://kit.fontawesome.com/cab5e3c57e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<main>
-  <h1>This is an awesome website that I've created</h1>
-  <a href="about.html">Read about me</a>
-  <div class="key-features">
-    <div class="feature">
-      <img src="images/tree.png">
-      <p>Plan Trees</p>
+  <header id="header">
+    <nav id="navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <img src="assets/me.png" alt="Gyulavári Ádám profile picture">
+    <h1>Gyulavári Ádám</h1>
+    <h2>Software engineer</h2>
+    <div class="social">
+      <a href="https://www.facebook.com/adam.gyulavari/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/adam.gyulavari/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/adam-gyulavari/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/adamgyulavari/" target="_blank"><i class="fab fa-github"></i></a>
     </div>
-    <div class="feature">
-      <img src="images/deal.png">
-      <!-- CTRL+D on windows and CMD+D -->
-      <p>Make many many many more Friends</p>
-    </div>
-    <div class="feature">
-      <img src="images/money.png">
-      <p>Profit</p>
-    </div>
-    <div class="feature">
-      <img src="images/deal.png">
-      <p>Make Friends</p>
-    </div>
-  </div>
-  <form class="newsletter-form">
-    <h2>Newsletter</h2>
-    <p>Sign up to our newsletter to receive awesome news about fresh air.</p>
+  </header>
+  <a name="about"></a>
+  <section class="col-2">
     <div>
-      <input type="text">
+      <h3>Hello.</h3>
+      <p>My name is Adam and I'm a software engineer.</p>
+      <p>I've worked as an Android and backend developer for several years. For the most recent years I've been teaching and mentoring software developer students in various technologies and languages.</p>
+      <p>I'm enthusiastic about education and helping people around me, but I also find joy in solving problems and creating applications to make life easier or just fun.</p>
     </div>
     <div>
-      <input type="submit" value="Subscribe">
+      <h3>Basic information</h3>
+      <div class="data-grid">
+        <span class="label">Age</span>
+        <span class="value">34</span>
+        <span class="label">Email</span>
+        <span class="value">gyulavari.adam [at] gmail.com</span>
+        <span class="label">Phone</span>
+        <span class="value">+36 30 326 9872</span>
+        <span class="label">Languages</span>
+        <span class="value">Hungarian, English, Italian (maybe)</span>
+      </div>
     </div>
-    <input type="checkbox" id="tac">
-    <label for="tac">
-      I accept the <a href="http://example.org" target="_blank">terms and conditions</a>
-    </label>
-    <div class="exit-button">x</div>
-  </form>
-  <a href="http://example.org" class="question-button">?</a>
-</main>
-<!-- partial -->
-  
+  </section>
+  <a name="skills"></a>
+  <section class="show-on-scroll">
+    <h3>Skills</h3>
+    <div class="col-2">
+      <div class="skill">
+        <div class="data-grid">
+          <span class="label">Java (Android, Spring)</span>
+          <span class="value right">80%</span>
+        </div>
+        <div class="progress">
+          <div class="bar show-on-scroll" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="data-grid">
+          <span class="label">Devops (heroku, aws, jenkins)</span>
+          <span class="value right">75%</span>
+        </div>
+        <div class="progress">
+          <div class="bar show-on-scroll" style="width: 75%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="data-grid">
+          <span class="label">JavaScript (nodejs, React)</span>
+          <span class="value right">70%</span>
+        </div>
+        <div class="progress">
+          <div class="bar show-on-scroll" style="width: 70%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="data-grid">
+          <span class="label">CSS, SASS</span>
+          <span class="value right">70%</span>
+        </div>
+        <div class="progress">
+          <div class="bar show-on-scroll" style="width: 70%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="data-grid">
+          <span class="label">Ruby (Rails, Sinatra)</span>
+          <span class="value right">65%</span>
+        </div>
+        <div class="progress">
+          <div class="bar show-on-scroll" style="width: 65%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="data-grid">
+          <span class="label">Teaching, mentoring</span>
+          <span class="value right">85%</span>
+        </div>
+        <div class="progress">
+          <div class="bar show-on-scroll revealed" style="width: 85%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <a name="experience"></a>
+  <section class="show-on-scroll">
+    <h3>Experience & Education</h3>
+    <ul>
+      <li class="show-on-scroll">
+        <span>2016 May - Present</span>
+        <div>
+          <h4>Mentor at <a href="https://greenfoxacademy.com" target="_blank">Green Fox Academy</a></h4>
+          <p>
+            I was teaching the basic programming principles,
+            OOP and modern software development methodologies
+            for junior developers. Occasionally contributed to
+            in house softwares and worked as an outsourced developer.
+            Technologies and languages I've worked with here: Java,
+            Spring, Android, Ruby on Rails, Python, JavaScript,
+            TypeScript, NodeJS, React, Angular, C# .NET Core.
+          </p>
+        </div>
+      </li>
+      <li class="show-on-scroll">
+        <span>2016 Mar - 2017 Sep</span>
+        <div>
+          <h4>Developer at <a href="http://lab.coop" target="_blank">Lab.Coop</a> / Chain.Reaction / BOOOM.</h4>
+          <p>I was working with React and Ruby on Rails on a marketing campaign automation software and music streaming service.</p>
+        </div>
+      </li>
+      <li class="show-on-scroll">
+        <span>2012 Feb - 2016 Feb</span>
+        <div>
+          <h4>Developer at <a href="https://supercharge.io" target="_blank">Supercharge</a></h4>
+          <p>I was working with Android (Java) and Ruby on Rails on multiple small marketing apps, a language learning software. I was leading the development of mobile banking applications and mobile app for a phone service provider.</p>
+        </div>
+      </li>
+      <li class="show-on-scroll">
+        <span>2015</span>
+        <div>
+          <h4>Teacher of Engineering MA at BME</h4>
+          <p>I've acquired a Master degree at the Budapest University of Technology, Faculty of Economic and Social Sciences</p>
+        </div>
+      </li>
+      <li class="show-on-scroll">
+        <span>2013</span>
+        <div>
+          <h4>M.Sc. in Technical Informatics at BME</h4>
+          <p>I've acquired a Master at the Budapest University of Technology, Faculty of Electrical Engineering and Informatics</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <a name="projects"></a>
+  <section class="show-on-scroll">
+    <h3>Projects</h3>
+    <p>Besides work I like to work on small side projects or for NGOs, here are a few them that are still running.</p>
+    <div class="project col-2">
+      <img class="show-on-scroll" src="assets/konnekt.png" alt="Konnekt Live screenshot">
+      <div class="show-on-scroll">
+        <h4>
+          <a target="_blank" href="http://konnektlive.com">Konnektlive</a>
+          <a target="_blank" href="https://github.com/adamgyulavari/konnektlive"><i class="fab fa-github"></i></a>
+        </h4>
+        <p>Konnekt is a Hungarian NGO with the purpose to help high school students in various ways. I've participated in mentoring and organizing events. I've created this website for the event called Konnekt Live where the students can meet with many different professions and can have a conversation about what that job looks like on a regular day. So they can get an idea of the profession and decide where to go after high school. The website uses Ruby and Sinatra for the backend and a little vanilla JavaScript on the frontend.</p>
+      </div>
+    </div>
+    <div class="project col-2">
+      <img class="show-on-scroll" src="assets/mixtape.png" alt="Mixtape screenshot">
+      <div class="show-on-scroll">
+        <h4>
+          <a target="_blank" href="http://mixtape.mobil.ninja">Mixtape</a>
+          <a target="_blank" href="https://github.com/zeroswag/zeroswag-the-playlist"><i class="fab fa-github"></i></a>
+        </h4>
+        <p>Mixtape is a community playlist, where you can log in with your Spotify account. Create a playlist from your top 20 songs from Spotify and then you can share the playlist with others so their top 20 songs are added to the playlist. Made with Ruby on Rails (and love :D).</p>
+      </div>
+    </div>
+    <div class="project col-2">
+      <img class="show-on-scroll" src="assets/polly.png" alt="Polly screenshot">
+      <div class="show-on-scroll">
+        <h4>
+          <a target="_blank" href="https://github.com/adamgyulavari/polly">Polly</a>
+          <a target="_blank" href="https://github.com/adamgyulavari/polly"><i class="fab fa-github"></i></a>
+        </h4>
+        <p>We used Slack at GFA with many students and the Simple poll extension was really great until they put a price on it (and with ~1000 slack users we didn't fit in the free tier). So I've created a simple clone with nodejs.</p>
+      </div>
+    </div>
+    <p class="project">And other than these I've also volunteered at <a href="https://djangogirls.org/budapest8/" target="_blank">DjangoGirls</a> as a dev coach many times.
+      Went to high schools to make the <a href="https://karolyi.mobil.ninja" target="_blank">coding profession</a> more popular.
+      And I like to buy unnecessary domains randomly in a pub to create the most advanced underlying algorithm for the <a href="https://isitshottime.com/" target="_blank">big questions of life</a>.</p>
+  </section>
+  <script src="scripts.js"></script>
 </body>
 </html>
