@@ -8,8 +8,12 @@ a, h1, h2, h3, h4, .label {
   font-family: 'Alata', sans-serif;
 }
 
+header a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 header a:hover {
- background-color: rgba(255, 255, 255, 0.2);
+ background-color: rgba(255, 255, 255, 0.4);
 }
 
 header {
