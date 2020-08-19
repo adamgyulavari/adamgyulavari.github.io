@@ -315,3 +315,49 @@ footer a {
     padding: 10px 10px;
   }
 }
+
+@media print {
+  .progress {
+    display: block !important;
+  }
+  .progress .bar {
+    transform: scaleX(1);
+    display: block !important;
+  }
+
+  header::after {
+    content: 'Visit web version at https://adamgyulavari.github.io'
+  }
+  
+  section.show-on-scroll {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+  
+  li.show-on-scroll {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+  
+  .project img.show-on-scroll,
+  .project div.show-on-scroll {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  .skill, h3, h4 {
+    page-break-after: avoid;
+  }
+
+  footer {
+    display: none;
+  }
+}
